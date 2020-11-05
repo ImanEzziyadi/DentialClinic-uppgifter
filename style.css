@@ -9,9 +9,12 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.container {
+/* .container { 
     width: 100%;
     padding: 0 1rem;
     margin: 0 auto;
@@ -41,27 +44,26 @@ html, body {
 .collapse:not(.show) {
     display: none;
 }
+/* }} */
+
 
 header {
     grid-area: header;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:    "navbar-top collapse"
                             "navbar";
+    
 
 }
 #navbar-top collapse {
     grid-area: navbar-top collapse;
-    text-align: center;
+    text-align:  center;
+    border-bottom: 1px solid gry#707070;
+   
 }
 
-#navbar-top {
-    border-bottom: 1px solid #707070;
-
-}
-
-#navbar, #navbar-top {
+#navbar, #navbar-top collapse {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
@@ -73,21 +75,24 @@ header {
     align-items: center;
 }
 
-#navbar-top .container {
+#navbar-top collapse .container {
     font-size: 0.8rem;
+     width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
 }
 
-#navbar-top .container .hours {
+#navbar-top collapse .container .hours {
     color:#626262;
 }
 
-#navbar-top .container .hours i {
+#navbar-top collapse .container .hours i {
     color: #2BAAEC;
     margin-right: 0.5rem;
     font-size: 1.2em;
 }
 
-#navbar-top .container .socialmedia a {
+#navbar-top collapse .container .socialmedia a {
     margin: 0 0.5rem;
 }
 
@@ -100,25 +105,25 @@ header {
 }*/
 
 
-#navbar-brand {
+#navbar .navbar-brand {
     display: inline-block;
     font-size: 1.5rem;
     color: black;
     margin-right: 1rem;  
 }
 
-#navbar-brand img {
-    height: 4rem;
+#navbar .navbar-brand img {
+    height: 3rem;
     margin-top: 0.5rem;
 }
 
-#navbar-toggler {
+#navbar.navbar-toggler  {
     font-size: 2.5rem;
     color:#2BAAEC;
     background-color: transparent;
     border: 1px solid transparent;
 }
-#navbar-collapse {
+#navbar .collapse navbar-collapse {
     align-items: center;
 }
 
@@ -128,7 +133,7 @@ header {
 }
 
 #nav-link {
-    color: #363636;
+    /* color: #363636; */
     font-size: 1rem;
     font-family: 'Roboto Slab', serif;
     padding: 0;
